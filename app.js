@@ -10,8 +10,8 @@ var base58 = require('./base58.js');
 var Url = require('./models/url');
 
 //mongoose.connect('mongodb://' + config.db.host + '/' + config.db.name);
-// var mongourl = 'mongodb://uyenntm-shortenurl:uyenntm12345678@ds161426.mlab.com:61426/shortenurl';
- var mongourl = 'mongodb://' + config.db.host + '/' + config.db.name;
+ var mongourl = 'mongodb://uyenntm-shortenurl:uyenntm12345678@ds161426.mlab.com:61426/shortenurl';
+ //var mongourl = 'mongodb://' + config.db.host + '/' + config.db.name;
  console.log(mongourl);
  mongoose.connect(mongourl);
 
