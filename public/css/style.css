@@ -1,0 +1,416 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* RESET CSS BEGIN */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/*RESET CSS END*/
+
+/* HELPER CLASS BEGIN */
+
+
+
+
+
+/* HELPER CLASS END */
+
+/* Tooltip styling */
+
+#tooltip{
+   
+    display: none;
+    margin: 1vh 0 0 1.4vw;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    padding: 0.8vh 0.8vw;
+    font-size: 1vw;
+    line-height: 2vh;
+    min-width: 10vw;
+    width: 15vw;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+
+/* end tooltip helper */
+
+/* general rules */
+
+@font-face {
+    font-family: "SF-UI-Display-Regular";
+    src: local('SF-UI-Display-Regular.otf'), url('SF-UI-Display-Bold.otf') format('opentype');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'HelveticaNeue-Thin';
+    margin: 0;
+    padding: 0;
+    font-size: 2vh;
+}
+
+.bg{
+    height: 100vh;
+    background-image: url('../img/Background Image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.logo{
+    width: 8vw;
+}
+.container{
+    padding: 5vh;
+}
+/* Main */
+.main{
+    margin-top: 10vh;
+    width: 30vw;
+    padding-top: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2.5vh;
+    background-color: white;
+    box-shadow: 1px 1px 3px #595959;
+    height:50vh;
+}
+.main h2{
+    font-size: 5vh !important;
+    font-weight: bold;
+}
+.main p{
+    padding: 1.5vh 0;
+    font-size: 3vh;
+}
+.input-form{
+    width: 100%;
+    padding: 0vh 1vw 1vh 0;
+}
+.input-form label{
+    font-size: 0.7vw;
+}
+.input-form input  {
+    width: 100%;
+    height: 5vh;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    padding: 0;
+    font-size: 1vw;
+    vertical-align: bottom; 
+}
+#shorten-display{
+    width: 100%;
+    height: 5vh;
+    border-bottom: 1px solid black;
+    display: block;
+    line-height: 5vh;
+}
+#shorten-display span{
+    font-size: 1vw !important;
+}
+.input-focus{
+    border-bottom: 1px solid blue !important; 
+    caret-color: blue;
+}
+
+#input-url::-webkit-input-placeholder {
+    color: grey;
+}
+#input-url:focus::-webkit-input-placeholder {
+    /*border-bottom: 1px solid blue;*/
+    color: white;
+   
+}
+.btn-container{
+    margin-top: 5vh;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 3vh;
+}
+.readonly-input{
+    border-bottom: 1px solid grey !important;
+    color: black;
+}
+a:link {
+    text-decoration: none;   
+    font-weight: bold;
+   
+}
+a:active {
+    text-decoration: none;
+   
+}
+/* END Main */
+
+/* FOOTER */
+.footer{
+    padding: 3vh 5vh;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer span{
+    padding-right: 2vw;
+}
+.phone-img, .email-img{
+    width: 1.9vw;  
+    padding-right: 1vw;
+}
+.copyrights{
+    float: right;  
+}
+/* END FOOTER */
+
+/* Media queries /responsiveness  begin*/
+@media only screen and (max-width:1086px) {
+    .main{
+        width: 35%;
+    }   
+    .btn-container{
+        font-size: 2vw;
+    }
+}
+@media only screen and (max-width:985px) {
+    .main{
+        width: 37%;
+    }   
+   
+}
+@media only screen and (max-width:929px) {
+    .main{
+        width: 45%;
+    }     
+}
+
+@media only screen and (max-width:790px) {
+    .main{
+        width: 70%;
+    }   
+    .phone-img, .email-img{
+        width: 3vw;    
+    }
+}
+@media only screen and (max-width:736px) {
+    .main{
+        width: 80%;
+    }  
+    
+}
+@media only screen and (max-width:680px) {
+    .main{
+        height: 45vh;
+        width: 100%;
+    }
+    .main h2{
+        font-size: 4vh !important;
+        font-weight: bold;
+    }
+    .main p{
+        padding: 1.5vh 0;
+        font-size: 2vh;
+    }
+}
+@media only screen and (max-width:601px) {
+    .main{
+       
+        width: 100%;
+    }
+}
+@media only screen and (max-width:410px) {
+    .phone-img, .email-img{
+        width: 4vw;    
+    }
+}
+@media only screen and (max-width:319px) {
+    .main{
+        height: 32vh;
+        width: 100%;
+    }
+    .main h2{
+        font-size: 2vh !important;
+        font-weight: bold;
+    }
+    .main p{
+        padding: 0.5vh 0;
+        font-size: 1vh;
+    }
+    .phone-img, .email-img{
+        width: 5vw;    
+    }
+    .footer span{
+        width: 100%;
+        display: block;
+    }
+    .btn-container{
+        margin-top: 2vh;
+        font-size: 3vh;
+    }
+}
+@media only screen and (max-width:186px) {
+    .main{
+        height: 40vh;
+       
+    }
+}
+@media only screen and (max-width:128px) {
+    .main{
+        height: 47vh;
+    }
+}
+@media only screen and (max-width:134px) {
+    .btn-container{
+        font-size: 8vw;
+    }
+}
+/* Media queries /responsiveness  end*/
+
+

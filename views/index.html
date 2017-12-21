@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>URL Shortener - Graf</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://apis.google.com/js/client.js?onload=googleApiLoaded"></script>
+</head>
+
+<body>
+  <div class="bg">
+    <div class="container">
+      <img class="logo" src="img/Logo.png" />
+      <div class="main">
+        <h2>Shorten any URL in less than a second.</h2>
+        <p>Make it easier to send and embed links.</p>
+        <div class="input-form ">
+          <label>Link</label>
+          <input type="text" id="input-url" class="url-field" placeholder="Type in or paste link here" />
+        </div>
+        <div class="input-form">
+          <label>Shorten URL</label>
+          <label id="shorten-display" class="readonly-input">
+            <span id="shorten-display-container"></span>
+          </label>
+          <span id="tooltip"></span>
+        </div>
+        <div class="input-form btn-container">
+          <a href="#" id="btn" class="btn btn-shorten">Shorten URL</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="phone">
+        <a href="/">
+          <img src="img/Phone Icon.png" class="phone-img">+1 424 829 3749</a>
+      </span>
+      <span class="email">
+        <a href="mailto:thisisatest@gmail.com">
+          <img src="img/Email Icon.png" class="email-img" />thisisatest@gmail.com</a>
+      </span>
+      <span class="copyrights">@ The Testing Company. All Rights Reserved.</span>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="javascripts/main.js "></script>
+</body>
+
+</html>

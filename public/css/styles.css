@@ -1,0 +1,452 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* RESET CSS BEGIN */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/*RESET CSS END*/
+
+/* HELPER CLASS BEGIN */
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+
+
+/* HELPER CLASS END */
+
+/* Tooltip styling */
+
+#tooltip{
+   
+    display: none;
+    margin: 5px 0 0 143px;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    padding: 0px 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    min-width: 100px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+
+/* end tooltip helper */
+
+/* general rules */
+
+@font-face {
+    font-family: "SF-UI-Display-Regular";
+    src: local('SF-UI-Display-Regular.otf'), url('SF-UI-Display-Bold.otf') format('opentype');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'HelveticaNeue-Thin';
+   
+}
+
+.bg{
+    height: 100vh;
+    background-image: url('../img/Background Image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.container{
+    margin: 20px;
+}
+
+#logo{
+    position: absolute;
+    top: 65px;
+    margin-left: 62px;
+}
+
+#main .container{
+    position: relative;
+    top: 210px;
+    width: 430px;
+    background-color: white;
+    margin-left: 63px;
+    height: 400px;
+    box-shadow: 2px;
+   
+}
+
+.input-form{
+    width: 100%;
+    padding: 10px 20px;
+   
+}
+.input-form label{
+    font-size: 12px;
+}
+.input-form input  {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    padding: 0;
+    font-size: 18px;
+    vertical-align: bottom;
+   
+}
+#shorten-display{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    display: block;
+    line-height: 50px;
+}
+#shorten-display span{
+    font-size: 17px !important;
+}
+
+
+/*#input-url::-webkit-input-placeholder {
+    border-bottom: 1px solid black;
+}*/
+/* #input-url:focus::-webkit-input-placeholder {
+    border-bottom: 1px solid blue;
+} */
+.input-focus{
+    border-bottom: 1px solid blue !important; 
+    caret-color: blue;
+}
+
+#input-url::-webkit-input-placeholder {
+    color: grey;
+}
+#input-url:focus::-webkit-input-placeholder {
+    /*border-bottom: 1px solid blue;*/
+    color: white;
+   
+}
+
+.readonly-input{
+    border-bottom: 1px solid grey !important;
+    color: black;
+}
+.highlight{
+    background-color: lightblue !important;
+}
+.input-form h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 50px;
+}
+.top{
+    padding-top: 50px;  
+}
+
+a:link {
+    text-decoration: none;   
+    font-weight: bold;
+   
+}
+a:active {
+    text-decoration: none;
+   
+}
+.btn-container{
+    margin-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer {
+    background: #2e2e38;
+    position:absolute;
+    /* bottom:0; */
+    width:100%;
+    /* height:60px;   Height of the footer */
+    height: 10%;
+    bottom: -10%;
+   
+}
+footer .container{
+    height: 100%;
+}
+footer .col-4-footer{
+    position:relative;
+    float: left;
+    /*width: 314px; */
+    top: 20px;
+    margin-left: 63px;
+   
+}
+.col-4-footer a{
+    color: white;
+    line-height: 20px;
+    text-decoration: underline;
+}
+.phone-img, .email-img{
+    width: 30px;  
+    padding-right: 14px;
+}
+
+copyright{
+    position:relative;
+    color: white;
+    top: 20px; 
+    margin-right: 63px;
+}
+/* Media queries /responsiveness  begin*/
+
+@media only screen and (max-width:667px) {
+    body{
+        height: 670px; 
+    }
+    #logo{
+        top: 10px;
+        margin-left: 5px;
+    }
+    #main .container{
+        top: 100px;
+        width: 90%;
+        height: 80%;
+        margin-left: 5px;
+    }
+    footer{
+       height: 15%;
+       bottom: -15%;
+    }
+    footer .col-4-footer{
+        clear:both;
+        margin-left: 10px;
+        line-height: 22px;
+    }
+}
+@media only screen and (max-width:568px) {
+   
+    #logo{
+        top: 10px;
+        margin-left: 5px;
+    }
+    
+    #main .container{
+        top: 100px;
+        width: 90%;
+        height: 50%;
+        margin-left: 5px;
+        padding-bottom: 10px; 
+    }
+    footer{
+      
+       height: 30%;
+       bottom: -30%;
+    }
+    footer .col-4-footer{
+        clear:both;
+        margin-left: 10px;
+        line-height: 25px;
+    }
+    .copyright{
+        width: 100%;
+        padding: 5px 0px 0 9px;
+        line-height: 25px;
+    }
+    
+}
+@media only screen and (max-height:768px) {
+    #main .container{
+        height: 20%;  
+    }
+    footer{
+       height: 10%;
+       bottom: -30%;
+    } 
+    
+}
+
+
+
+/* Media queries /responsiveness  end*/
