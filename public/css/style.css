@@ -281,8 +281,6 @@ body {
 a:link {
     text-decoration: none;   
     font-weight: bold;
-    
-   
 }
 a:active {
     text-decoration: none;
@@ -342,6 +340,10 @@ a:active {
     .phone-img, .email-img{
         width: 3vw;    
     }
+    .copyrights{
+        display: block;
+        width: 100%;
+    }
 }
 @media only screen and (max-width:736px) {
     .main{
@@ -379,10 +381,7 @@ a:active {
     .footer{
       height: 15%;
     }
-    .footer span{
-        width: 100%;
-        display: block;
-    }
+    
    
 }
 @media only screen and (max-width:601px) {
