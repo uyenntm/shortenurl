@@ -190,7 +190,7 @@ body {
     font-family: 'HelveticaNeue-Thin';
     margin: 0;
     padding: 0;
-    font-size: 2vh;
+    font-size: 1em;
 }
 
 .bg{
@@ -210,7 +210,7 @@ body {
 /* Main */
 .main{
     margin-top: 10vh;
-    width: 40%;
+    width: 30%;
     padding-top: 5vh;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -220,7 +220,7 @@ body {
     height:40%;
 }
 .main h2{
-    font-size: 5vh !important;
+    font-size: 1.8em;
     font-weight: bold;
 }
 .main p{
